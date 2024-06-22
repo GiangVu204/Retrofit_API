@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh SÁch OTO"
+            android:textSize="25dp"
+            android:textColor="#F10606"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etSearch"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:hint="Tìm kiếm..."-->
+        <!--            android:inputType="text"-->
+        <!--            android:maxLines="1" />-->
+
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginHorizontal="10dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:background="@drawable/custom_edtext"
+            android:hint="Search distributor"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSortAsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tăng dần"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnSortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm dần"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fltAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/baseline_add" />
+
+</FrameLayout>

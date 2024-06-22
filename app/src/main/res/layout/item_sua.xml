@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="UPDATE"
+        android:textColor="#D31212"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgUPdateAnhXe"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/anh" />
+
+        <EditText
+            android:id="@+id/edtTenOTO_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap ten"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/edtMausac_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Mau sac"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/edtGia_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Gia"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/edtMota_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Mo ta"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:text="Update"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

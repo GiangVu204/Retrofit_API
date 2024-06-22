@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:text="UPDATE"-->
+    <!--        android:textColor="#D31212"-->
+    <!--        android:textSize="40dp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_detail_avatar"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/anh"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap ten"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Mau sac"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Gia"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/khung"
+            android:hint="Nhap Mo ta"
+            android:textColor="#858585"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
