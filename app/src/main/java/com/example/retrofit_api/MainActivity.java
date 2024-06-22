@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
 
     dialog.show();
   }
-
+//đfd
   private void uploadCarWithImage(String ten_xe_ph33056, String mau_sac_ph33056, String gia_ban_ph33056, String mo_ta_ph33056, Uri imageUri) {
     // Chuyển đổi thông tin xe thành RequestBody
     RequestBody tenBody = RequestBody.create(ten_xe_ph33056, okhttp3.MultipartBody.FORM);
